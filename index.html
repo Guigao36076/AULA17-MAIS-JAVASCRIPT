@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função X Procedimento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--documentação para inserir o javascript no html!--> 
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    
+    <label for="lTitulo">Exemplo 1 - Evento: onclick</label>
+    <Label for="lTitulo1">Este exemplo exibe uma mensagem simples utilizando o input -button
+    </Label> <br>
+    <input type="button" value="Clique aqui" onclick="mostraAlerta()">
+    <br>
+    <input type="button" value="Clique aqui1" onclick="mostraAlerta1('Marcos')">
+    
+    <!--Trabalho com função-->
+    <div>
+        <label for="lTexto">Digite algo:</label>
+        <input type="text" name="nTexto" id="idTexto">
+        <input type="button" value="Clique aqui" onclick="idResultado.value= mensagem_com_parametro_return(idTexto.value)">
+        <label for="nResultado">Resultado:</label>
+        <input type="text" name="nResult" id="idResultado"> 
+    </div>
+
+    <!--Numero-->
+    <div>
+        <label for="lNumero1">Digite o 1º numero:</label>
+        <input type="number" name="lN1" id="idN1">
+        <label for="lNumero2">Digite o 2º numero:</label>
+        <input type="number" name="lN2" id="idN2">
+        <input type="button" value="Clique para somar" onclick="idResultSoma.value = soma_dos_numero (idN1.value, idN2.value)">
+        <label for="nResultSoma">Resultado:</label>
+        <input type="text" name="lResult" id="idResultSoma">
+       
+    
+            
+        </div>    
+
+    </div>
+
+</body>
+</html>
